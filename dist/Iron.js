@@ -66,15 +66,15 @@ var Observe = (function () {
     };
     return Observe;
 }());
-var iron = new Iron({
-    name: 'zyt',
-    age: 24
+/*let iron = new Iron({
+  name: 'zyt',
+  age: 24
 });
-toArray($els('[i-bind]')).forEach(function (el) {
-    var val = iron.get(el.getAttribute('i-bind'));
-    console.log(el);
-    el.textContent = val;
-});
+
+toArray($els('[i-bind]')).forEach((el) => {
+  let val = iron.get(el.getAttribute('i-bind'));
+  el.textContent = val;
+});*/
 function getter(name) {
     return name ? $els("[i-bind=\"" + name + "\"]") : $els('[i-bind]');
 }
